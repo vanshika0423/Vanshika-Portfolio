@@ -84,8 +84,7 @@ export function TimelineDemo() {
               for seamless code editing, compilation, and output visualization.
             </p>
             <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-              Lorem ipsum is for people who are too lazy to write copy. But we
-              are not. Here are some more example of beautiful designs I built.
+              build my own compiler for compile the code.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <Image

@@ -9,6 +9,7 @@ import { SparklesPreview } from "./components/ui/SparklesPreview";
 import { HeroHighlightDemo } from "./components/ui/HeroHighlightDemo";
 import { StickyScrollRevealDemo } from "./components/ui/StickyScrollRevealDemo";
 import { TextHoverEffectDemo } from "./components/ui/TextHoverEffectDemo";
+import { SignupFormDemo } from "./components/ui/SignupFormDemoo";
 export default function Home() {
   return (
     <div className="relative">
@@ -20,6 +21,7 @@ export default function Home() {
        {/* <LayoutGridDemo/> */}
        <TextHoverEffectDemo/>
        <StickyScrollRevealDemo/>
+       <SignupFormDemo/>
        {/* <TabsDemo/> */}
         {/* <CardDemo/> */}
     </div>
