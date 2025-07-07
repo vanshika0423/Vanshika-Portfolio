@@ -22,3 +22,15 @@ export function BackgroundBeamsWithCollisionDemo() {
     </BackgroundBeamsWithCollision>
   );
 }
+
+// import React from "react";
+// import Spline from "@splinetool/react-spline";
+
+// export function BackgroundBeamsWithCollisionDemo() {
+//   return (
+//     <div className="w-full h-screen">
+//       <Spline scene="/spline/sceneheor.splinecode" />
+//     </div>
+//   );
+// }
+
