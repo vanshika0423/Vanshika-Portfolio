@@ -6,6 +6,8 @@ import { TextHoverEffectDemo } from "./components/ui/TextHoverEffectDemo";
 import { SignupFormDemo } from "./components/ui/SignupFormDemoo";
 import SplashCursor from "./components/ui/SplashCursor";
 import { FloatingNavDemo } from "./components/ui/FloatingNavDemo";
+import { HoverBorderGradientDemo } from "./components/ui/HoverBorderGradientDemo";
+import SplineContactSection from "./components/ui/SplineContactSection";
 export default function Home() {
   return (
     <div className="relative">
@@ -16,7 +18,7 @@ export default function Home() {
       <HeroHighlightDemo/>
        <TextHoverEffectDemo/>
        <StickyScrollRevealDemo/>
-       <SignupFormDemo/>
+       <SplineContactSection/>
     </div>
   );
 }
