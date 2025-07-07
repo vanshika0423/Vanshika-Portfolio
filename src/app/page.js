@@ -8,6 +8,7 @@ import SplashCursor from "./components/ui/SplashCursor";
 import { FloatingNavDemo } from "./components/ui/FloatingNavDemo";
 import { HoverBorderGradientDemo } from "./components/ui/HoverBorderGradientDemo";
 import SplineContactSection from "./components/ui/SplineContactSection";
+import Footer from "./components/ui/Footer";
 export default function Home() {
   return (
     <div className="relative">
@@ -19,6 +20,7 @@ export default function Home() {
        <TextHoverEffectDemo/>
        <StickyScrollRevealDemo/>
        <SplineContactSection/>
+       <Footer/>
     </div>
   );
 }
