@@ -1,14 +1,13 @@
 import { TimelineDemo } from "./components/ui/TimelineDemo";
 import { BackgroundBeamsWithCollisionDemo } from "./components/ui/BackgroundBeamsWithCollisionDemo";
-import { HeroHighlightDemo } from "./components/ui/HeroHighlightDemo";
 import { StickyScrollRevealDemo } from "./components/ui/StickyScrollRevealDemo";
-import { TextHoverEffectDemo } from "./components/ui/TextHoverEffectDemo";
 import { SignupFormDemo } from "./components/ui/SignupFormDemoo";
 import SplashCursor from "./components/ui/SplashCursor";
 import { FloatingNavDemo } from "./components/ui/FloatingNavDemo";
 import { HoverBorderGradientDemo } from "./components/ui/HoverBorderGradientDemo";
 import SplineContactSection from "./components/ui/SplineContactSection";
 import Footer from "./components/ui/Footer";
+import BlurText from "./components/ui/BlurText";
 export default function Home() {
   return (
     <div className="relative">
@@ -16,8 +15,15 @@ export default function Home() {
       <SplashCursor/>
       <BackgroundBeamsWithCollisionDemo />
       <TimelineDemo/>
-      <HeroHighlightDemo/>
-       <TextHoverEffectDemo/>
+  
+<div className="w-full flex justify-center my-25">
+  <BlurText
+    text="Deep diving into competitive programming and learning the art of optimization."
+    className="text-7xl font-bold text-white text-center max-w-5xl"
+  />
+</div>
+
+
        <StickyScrollRevealDemo/>
        <SplineContactSection/>
        <Footer/>
