@@ -11,6 +11,9 @@ import SplineContactSection from "./components/ui/SplineContactSection";
 import Footer from "./components/ui/Footer";
 import BlurText from "./components/ui/BlurText";
 
+import SplitText from "./components/ui/SplitText/SplitText";
+
+import { GlowingEffectDemo } from "./components/ui/GlowingEffectDemo";
 export default function Home() {
   const homeRef = useRef(null);
   const projectRef = useRef(null);
@@ -32,11 +35,10 @@ export default function Home() {
         <BackgroundBeamsWithCollisionDemo />
       </div>
 
-
       <div ref={projectRef}>
         <TimelineDemo />
       </div>
-    <div className="w-full px-4 py-16 flex justify-center">
+      <div className="w-full px-4 py-16 flex justify-center">
         <BlurText
           text="Deep diving into competitive programming and learning the art of optimization."
           className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white text-center leading-snug max-w-6xl"
@@ -46,10 +48,19 @@ export default function Home() {
         <StickyScrollRevealDemo />
       </div>
 
+  <div className="w-full px-4 py-5 mt-20 flex justify-center">
+  <SplitText
+    text="Certification"
+    className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white text-center leading-snug max-w-6xl"
+  />
+</div>
+
+
+      <GlowingEffectDemo />
+
       <div ref={contactRef}>
         <SplineContactSection />
       </div>
-
       <Footer />
     </div>
   );
