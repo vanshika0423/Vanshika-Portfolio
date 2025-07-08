@@ -6,14 +6,16 @@ import { SignupFormDemo } from "./SignupFormDemoo";
 export default function SplineContactSection() {
   return (
     <section className="w-full min-h-screen flex flex-col md:flex-row">
-<div className="w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-auto">
-  <Spline
-    scene="/spline/scene.splinecode"
-    className="w-full h-full"
-  />
-</div>
+      <div className="w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-auto md:min-h-screen flex items-center justify-center">
+        <div className="w-full h-full mt8 md:mt-0">
+          <Spline
+            scene="/spline/scene.splinecode"
+            className="w-full h-full"
+          />
+        </div>
+      </div>
 
-      <div className="w-full md:w-1/2 flex items-center justify-center p-8">
+      <div className="w-full md:w-1/2 flex items-center justify-center p-8 md:min-h-screen">
         <SignupFormDemo />
       </div>
     </section>
