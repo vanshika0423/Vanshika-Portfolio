@@ -14,9 +14,62 @@ import craditcard2 from "../../asset/cradit2.jpg";
 import craditcard3 from "../../asset/cardit3.jpg";
 import craditcard4 from "../../asset/cradit4.jpg";
 
+import mail1 from "../../asset/coldmain.png"
+import mail2 from "../../asset/coldmain1.png"
+import mail3 from "../../asset/coldmain2.png"
+import mail4 from "../../asset/coldmain3.png"
+
 export function TimelineDemo() {
   const data = [
     {
+      title: "Cold Email Genius - Ai Agent ",
+      content: (
+        <a
+          href="https://cold-email-ai-agent-frontend.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block no-underline"
+        >
+          <div>
+            <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+              Cold Email Genius is your smart AI-powered assistant that crafts personalized, high-converting cold emails in seconds.
+              Just drop in a job description or target profile, and let the AI handle the rest — tone, structure, and persuasion optimized.
+            </p>
+            <div className="grid grid-cols-2 gap-4">
+              <Image
+                src={mail1}
+                alt="startup template"
+                width={500}
+                height={500}
+                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+              />
+              <Image
+                src={mail2}
+                alt="startup template"
+                width={500}
+                height={500}
+                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+              />
+              <Image
+                src={mail4}
+                alt="startup template"
+                width={500}
+                height={500}
+                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+              />
+              <Image
+                src={mail3}
+                alt="startup template"
+                width={500}
+                height={500}
+                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+              />
+            </div>
+          </div>
+        </a>
+      ),
+    },
+        {
       title: "Memory Fragmentation Visualizer",
       content: (
         <a
