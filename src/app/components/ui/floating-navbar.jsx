@@ -30,7 +30,7 @@ export const FloatingNav = ({ navItems, className }) => {
           </button>
         ))}
 <a
-  href="https://drive.google.com/file/d/1pJlL25gkxG2AxL3RMqK_ComUOnMsbyCM/view?usp=sharing"
+  href="https://drive.google.com/file/d/1V4lh3zFh_ahycCs6TGqBEtueNDceLfB_/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   className="cursor-pointer border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full"
