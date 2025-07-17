@@ -1,8 +1,8 @@
 "use client";
 
-import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import Spline from "@splinetool/react-spline";
+import { useScroll, useTransform, motion } from "framer-motion";
+import RiveAnimation from "../../components/Riva/RiveAnimation";
 
 export const Timeline = ({ data }) => {
   const ref = useRef(null);
@@ -29,27 +29,31 @@ export const Timeline = ({ data }) => {
       className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-          {/* LEFT SIDE – TEXT */}
-          <div className="flex-1">
-            <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-              Projects from my journey
-            </h2>
-            <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-              Step into the journey of a unique project. Here, I unravel the
-              threads of my thought process and exciting steps taken from
-              inception to execution.
-            </p>
-          </div>
+<div className="max-w-7xl mx-auto py-12 px-4 md:px-8 lg:px-10">
+  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-y-10 md:gap-x-12">
+    {/* TEXT */}
+    <div className="flex-1">
+      <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+        Projects from my journey
+      </h2>
+      <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+        Step into the journey of a unique project. Here, I unravel the
+        threads of my thought process and exciting steps taken from
+        inception to execution.
+      </p>
+    </div>
 
-          {/* RIGHT SIDE – SPLINE */}
-          <div className="flex-1 w-full h-[300px] md:h-[500px]">
-            <Spline scene="/spline/sceneheor.splinecode" />
-          </div>
-        </div>
-      </div>
+    {/* RIVE ANIMATION */}
+    <div className="flex-1 w-full">
+      <motion.div className="w-full aspect-video md:aspect-[5/4] h-auto">
+        <RiveAnimation />
+      </motion.div>
+    </div>
+  </div>
+</div>
 
+
+      {/* TIMELINE ENTRIES */}
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div
@@ -69,16 +73,15 @@ export const Timeline = ({ data }) => {
               <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
                 {item.title}
               </h3>
-              {item.content}{" "}
+              {item.content}
             </div>
           </div>
         ))}
 
+        {/* TIMELINE SCROLL TRACK */}
         <div
-          style={{
-            height: height + "px",
-          }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
+          style={{ height: `${height}px` }}
+          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >
           <motion.div
             style={{
