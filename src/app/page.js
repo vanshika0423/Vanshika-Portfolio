@@ -48,13 +48,12 @@ export default function Home() {
         <StickyScrollRevealDemo />
       </div>
 
-  <div className="w-full px-4 py-5 mt-20 flex justify-center">
-  <SplitText
-    text="Certification"
-    className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white text-center leading-snug max-w-6xl"
-  />
-</div>
-
+      <div className="w-full px-4 py-5 mt-20 flex justify-center">
+        <SplitText
+          text="Certification"
+          className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white text-center leading-snug max-w-6xl"
+        />
+      </div>
 
       <GlowingEffectDemo />
 
