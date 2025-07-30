@@ -2,29 +2,26 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const titles = ["how are you ?",];
-
 export default function LoadingScreen() {
   const [show, setShow] = useState(true);
-  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+  const [textVisible, setTextVisible] = useState(false);
 
   useEffect(() => {
-    let titleInterval;
+    // First: show the text after a short delay (to prevent abrupt mount)
+    const textTimer = setTimeout(() => {
+      setTextVisible(true);
+    }, 300); // slight delay before fading in text
 
-    if (currentTitleIndex < titles.length - 1) {
-      titleInterval = setInterval(() => {
-        setCurrentTitleIndex((prev) => prev + 1);
-      }, 1600);
-    } else {
-      const delay = setTimeout(() => {
-        setShow(false);
-      }, 1000); 
+    // Second: hide the screen after full view time
+    const exitTimer = setTimeout(() => {
+      setShow(false);
+    }, 3000); // enough time to view the message
 
-      return () => clearTimeout(delay);
-    }
-
-    return () => clearInterval(titleInterval);
-  }, [currentTitleIndex]);
+    return () => {
+      clearTimeout(textTimer);
+      clearTimeout(exitTimer);
+    };
+  }, []);
 
   return (
     <AnimatePresence>
@@ -36,16 +33,17 @@ export default function LoadingScreen() {
           exit={{ y: "-100%" }}
           transition={{ duration: 2, ease: [0.65, 0, 0.35, 1] }}
         >
-          <motion.h1
-            key={currentTitleIndex}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="text-white text-3xl sm:text-4xl md:text-5xl font-bold"
-          >
-            {titles[currentTitleIndex]}
-          </motion.h1>
+          {textVisible && (
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 1.2, ease: "easeInOut" }}
+              className="text-white text-3xl sm:text-4xl md:text-5xl font-bold"
+            >
+              how are you?
+            </motion.h1>
+          )}
         </motion.div>
       )}
     </AnimatePresence>
