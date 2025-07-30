@@ -22,7 +22,7 @@ import mail4 from "../../asset/coldmain3.png"
 export function TimelineDemo() {
   const data = [
     {
-      title: "Cold Email Genius - Ai Agent ",
+      title: "Cold Email Genius",
       content: (
         <a
           href="https://cold-email-ai-agent-frontend.vercel.app/"
