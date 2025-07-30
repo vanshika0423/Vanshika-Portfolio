@@ -7,15 +7,13 @@ export default function LoadingScreen() {
   const [textVisible, setTextVisible] = useState(false);
 
   useEffect(() => {
-    // First: show the text after a short delay (to prevent abrupt mount)
     const textTimer = setTimeout(() => {
       setTextVisible(true);
-    }, 300); // slight delay before fading in text
+    }, 200); 
 
-    // Second: hide the screen after full view time
     const exitTimer = setTimeout(() => {
       setShow(false);
-    }, 3000); // enough time to view the message
+    }, 3000); 
 
     return () => {
       clearTimeout(textTimer);

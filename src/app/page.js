@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <div className="relative">
-      <LoadingScreen /> {/* This just slides away when done */}
+      {/* <LoadingScreen /> */}
 
       <FloatingNavDemo
         refs={{ homeRef, projectRef, codingRef, contactRef }}
