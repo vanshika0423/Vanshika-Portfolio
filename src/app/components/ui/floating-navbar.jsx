@@ -3,7 +3,6 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "../../lib/util";
 
-
 export const FloatingNav = ({ navItems, className }) => {
   return (
     <AnimatePresence mode="wait">
@@ -29,16 +28,15 @@ export const FloatingNav = ({ navItems, className }) => {
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </button>
         ))}
-<a
-  href="https://drive.google.com/file/d/1V4lh3zFh_ahycCs6TGqBEtueNDceLfB_/view?usp=sharing"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="cursor-pointer border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full"
->
-  <span>Resume</span>
-  <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
-</a>
-
+        <a
+          href="https://drive.google.com/file/d/1V4lh3zFh_ahycCs6TGqBEtueNDceLfB_/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full"
+        >
+          <span>Resume</span>
+          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
+        </a>
       </motion.div>
     </AnimatePresence>
   );
