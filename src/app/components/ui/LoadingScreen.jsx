@@ -13,7 +13,7 @@ export default function LoadingScreen() {
 
     const exitTimer = setTimeout(() => {
       setShow(false);
-    }, 3000); 
+    }, 2000); 
 
     return () => {
       clearTimeout(textTimer);
