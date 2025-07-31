@@ -13,7 +13,10 @@ import Footer from "./components/ui/Footer";
 import BlurText from "./components/ui/BlurText";
 import Coding_profiles from "./components/ui/Coding_profiles";
 import SplitText from "./components/ui/SplitText/SplitText";
+import Tech_Stack from "./components/ui/Tech_Stack";
+import SelectedProjects from "./components/ui/SelectedProjects";
 import { GlowingEffectDemo } from "./components/ui/GlowingEffectDemo";
+import Certification from "./components/ui/Certification";
 
 
 
@@ -37,16 +40,15 @@ export default function Home() {
       <div ref={projectRef}>
         <TimelineDemo />
       </div>
-      <div ref={codingRef}>
+      {/* <div ref={codingRef}>
         <Coding_profiles />
+      </div> */}
+      <div ref={codingRef}>
+        <SelectedProjects/>
       </div>
-      <div className="w-full px-4 py-5 mt-20 flex justify-center">
-        <SplitText
-          text="Certification"
-          className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white text-center leading-snug max-w-6xl"
-        />
-      </div>
-      <GlowingEffectDemo />
+      <Tech_Stack/>
+      <Certification/>
+      {/* <GlowingEffectDemo /> */}
       <div ref={contactRef}>
         <SplineContactSection />
       </div>
