@@ -15,6 +15,8 @@ import Coding_profiles from "./components/ui/Coding_profiles";
 import SplitText from "./components/ui/SplitText/SplitText";
 import { GlowingEffectDemo } from "./components/ui/GlowingEffectDemo";
 
+
+
 export default function Home() {
   const homeRef = useRef(null);
   const projectRef = useRef(null);
@@ -23,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="relative">
-      {/* <LoadingScreen /> */}
+      <LoadingScreen />
 
       <FloatingNavDemo
         refs={{ homeRef, projectRef, codingRef, contactRef }}
