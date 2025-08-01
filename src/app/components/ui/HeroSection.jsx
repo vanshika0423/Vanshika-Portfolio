@@ -2,9 +2,11 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+
 import may from "../../asset/maya.png";
 import pro from "../../asset/pro.png";
 import cemera from "../../asset/cemra.jpg";
+import code from "../../asset/source-code.png";
 
 const floatTransition = {
   y: {
@@ -19,7 +21,7 @@ const Hero = () => {
   return (
     <section className="bg-black text-white min-h-screen flex items-center px-6 md:px-20 py-10 relative overflow-hidden">
       <div className="max-w-xl z-10 mt-30">
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+        <h1 className="text-5xl md:text-6xl font-bold leading-tight">
           <span className="text-purple-400">Mayank Singh,</span>
           <br />A Competitive Coder & Frontend Developer.
         </h1>
@@ -131,6 +133,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Heart Button Floating */}
+        {/* Code Icon Floating */}
         <motion.div
           className="absolute top-120 right-24"
           animate={{ y: [0, -10, 0] }}
@@ -141,19 +144,12 @@ const Hero = () => {
             ease: "easeInOut",
           }}
         >
-          <button className="flex items-center gap-4 bg-black border-2 border-dashed border-zinc-700 rounded-2xl px-6 py-3 transition-colors hover:border-zinc-600">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="#F91880"
-              className="w-8 h-8"
-            >
-              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-            </svg>
+          <div className="flex items-center gap-4 bg-black border-2 border-dashed border-zinc-700 rounded-2xl px-6 py-3 transition-colors hover:border-zinc-600">
+            <Image src={code} alt="Code Icon" className="w-8 h-8" />
             <span className="text-white text-xl font-semibold">
               Mayank Singh
             </span>
-          </button>
+          </div>
         </motion.div>
 
         {/* Person Card */}
