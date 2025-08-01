@@ -46,7 +46,7 @@ const Certification = () => {
               />
             </div>
             <div className="p-4">
-              <p className="text-gray-400 text-sm mb-2">{post.date}</p>
+              <p className="text-[#3d3d3d] text-sm mb-2">{post.date}</p>
               <div className="border-t-1 border-dashed border-[#4b4b4b] mb-3" />
               <h3 className="text-lg font-semibold">{post.title}</h3>
             </div>

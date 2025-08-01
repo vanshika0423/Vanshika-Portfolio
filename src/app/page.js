@@ -13,6 +13,7 @@ import Tech_Stack from "./components/ui/Tech_Stack";
 import SelectedProjects from "./components/ui/SelectedProjects";
 
 import Certification from "./components/ui/Certification";
+import HeroSection from "./components/ui/HeroSection";
 
 export default function Home() {
   const homeRef = useRef(null);
@@ -27,7 +28,8 @@ export default function Home() {
       <FloatingNavDemo refs={{ homeRef, projectRef, codingRef, contactRef }} />
       <SplashCursor />
       <div ref={homeRef}>
-        <BackgroundBeamsWithCollisionDemo />
+        {/* <BackgroundBeamsWithCollisionDemo /> */}
+        <HeroSection/>
       </div>
       <div ref={projectRef}>
         <TimelineDemo />
