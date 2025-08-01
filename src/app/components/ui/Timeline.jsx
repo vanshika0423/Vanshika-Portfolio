@@ -31,7 +31,6 @@ export const Timeline = ({ data }) => {
     >
 <div className="max-w-7xl mx-auto py-12 px-4 md:px-8 lg:px-10">
   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-y-10 md:gap-x-12">
-    {/* TEXT */}
     <div className="flex-1">
       <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
         Projects from my journey

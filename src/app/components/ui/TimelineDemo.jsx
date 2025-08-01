@@ -9,7 +9,7 @@ import compiler1 from "../../asset/comp1.png";
 import compiler2 from "../../asset/comp2.png";
 import compiler3 from "../../asset/comp3.jpg";
 import compiler4 from "../../asset/comp4.jpg";
-import craditcard1 from "../../asset/cradit1.jpg";
+import craditcard1 from "../../asset/cradit1.png";
 import craditcard2 from "../../asset/cradit2.jpg";
 import craditcard3 from "../../asset/cardit3.jpg";
 import craditcard4 from "../../asset/cradit4.jpg";
