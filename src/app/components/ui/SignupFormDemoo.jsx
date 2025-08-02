@@ -17,10 +17,10 @@ export function SignupFormDemo() {
 
     emailjs
       .sendForm(
-        "service_tkjqs3a",    
-        "template_18laqe9",    
+        "service_tkjqs3a",
+        "template_18laqe9",
         form.current,
-        "65K9U1YH9sH3iwgaK"   
+        "65K9U1YH9sH3iwgaK"
       )
       .then(
         (result) => {
@@ -37,10 +37,7 @@ export function SignupFormDemo() {
   };
 
   return (
-    <div className="mt-30 shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
-      {/* <h2 className="text-3xl font-bold text-neutral-800 dark:text-neutral-200">
-        Interested in collaborating with me.
-      </h2> */}
+    <div className="mt-30 shadow-input mx-auto w-full max-w-md rounded-none bg-black p-4 md:rounded-2xl md:p-8">
       <p className="mt-2 max-w-sm text-sm text-neutral-600 dark:text-neutral-300">
         I'm always open to discussing coding challenges, debugging technical issues, or exploring collaboration on development projects.
       </p>
