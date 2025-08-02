@@ -4,12 +4,18 @@ import quant from "../../asset/jp.png";
 import AWS from "../../asset/ama.png";
 import AWS1 from "../../asset/ama1.png";
 import googlehack from "../../asset/Hack2skill-Certificate.png";
+import hwi from "../../asset/hwi.png";
 
 const blogPosts = [
     {
     date: "August, 2025",
     title: "Google solution Challange.",
     image: googlehack,
+  },
+    {
+    date: "July, 2025",
+    title: "Hack with Infy.",
+    image: hwi,
   },
   {
     date: "July 2, 2025",
