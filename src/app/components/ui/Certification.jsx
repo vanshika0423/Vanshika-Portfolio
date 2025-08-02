@@ -1,9 +1,9 @@
-// Certification.jsx
 import Image from "next/image";
 import React from "react";
 import quant from "../../asset/jp.png";
 import AWS from "../../asset/ama.png";
 import AWS1 from "../../asset/ama1.png";
+import googlehack from "../../asset/Hack2skill-Certificate.png";
 
 const blogPosts = [
   {
@@ -20,6 +20,11 @@ const blogPosts = [
     date: "February 20, 2025",
     title: "AWS Skills Centers Training - Cloud Basics: Learned cloud fundamentals and AWS services.",
     image: AWS1,
+  },
+  {
+    date: "August, 2025",
+    title: "Google solution Challange.",
+    image: googlehack,
   },
 ];
 
