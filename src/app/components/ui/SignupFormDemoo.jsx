@@ -37,7 +37,7 @@ export function SignupFormDemo() {
   };
 
   return (
-    <div className="mt-30 shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
+    <div className="mt-30 shadow-input mx-auto w-full max-w-md rounded-none bg-black p-4 md:rounded-2xl md:p-8 dark:bg-black">
       {/* <h2 className="text-3xl font-bold text-neutral-800 dark:text-neutral-200">
         Interested in collaborating with me.
       </h2> */}
