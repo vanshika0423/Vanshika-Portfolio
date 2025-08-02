@@ -1,10 +1,11 @@
+// Input component extends from shadcnui - https://ui.shadcn.com/docs/components/input
 "use client";;
 import * as React from "react";
 import { cn } from "../../lib/util";
 import { useMotionTemplate, useMotionValue, motion } from "motion/react";
 
 const Input = React.forwardRef(({ className, type, ...props }, ref) => {
-  const radius = 100; 
+  const radius = 100; // change this to increase the rdaius of the hover effect
   const [visible, setVisible] = React.useState(false);
 
   let mouseX = useMotionValue(0);

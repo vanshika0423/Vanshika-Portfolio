@@ -5,7 +5,7 @@ import { SignupFormDemo } from "./SignupFormDemoo";
 
 export default function SplineContactSection() {
   return (
-    <section className="w-full min-h-screen flex flex-col md:flex-row">
+    <section className="bg-[#0a0a0a] w-full min-h-screen flex flex-col md:flex-row">
       <div className="w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-auto md:min-h-screen flex items-center justify-center">
         <div className="w-full h-full mt8 md:mt-0">
           <Spline

@@ -31,7 +31,7 @@ export function TimelineDemo() {
           className="block no-underline"
         >
           <div>
-            <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            <p className="mb-8 text-xs font-normal  md:text-sm text-neutral-200">
               Cold Email Genius is your smart AI-powered assistant that crafts personalized, high-converting cold emails in seconds.
               Just drop in a job description or target profile, and let the AI handle the rest — tone, structure, and persuasion optimized.
             </p>
@@ -79,7 +79,7 @@ export function TimelineDemo() {
           className="block no-underline"
         >
           <div>
-            <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            <p className="mb-8 text-xs font-normal text-neutral-200 md:text-sm dark:text-neutral-200">
               A Memory Fragmentation Visualizer is a tool designed to
               graphically represent how memory is allocated and used within a
               system, highlighting the presence and extent of fragmentation. It
@@ -132,7 +132,7 @@ export function TimelineDemo() {
           className="block no-underline"
         >
           <div>
-            <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            <p className="mb-8 text-xs font-normal text-neutral-200 md:text-sm dark:text-neutral-200">
               Developed a fully responsive and user-friendly frontend interface
               for seamless code editing, compilation, and output visualization.
             </p>
@@ -183,24 +183,24 @@ export function TimelineDemo() {
           className="block no-underline"
         >
         <div>
-          <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          <p className="mb-4 text-xs font-normal text-neutral-200 md:text-sm dark:text-neutral-200">
             Developed a machine learning model to detect fraudulent credit card
             transactions using real-world, imbalanced datasets.
           </p>
           <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs text-neutral-300 md:text-sm dark:text-neutral-300">
               ✅ Machine learning
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs text-neutral-300 md:text-sm dark:text-neutral-300">
               ✅ Python
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs text-neutral-300 md:text-sm dark:text-neutral-300">
               ✅ SMOTE
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs text-neutral-300 md:text-sm dark:text-neutral-300">
               ✅ Random Forest algorithm
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs text-neutral-300 md:text-sm dark:text-neutral-300">
               ✅ GridSearchCV
             </div>
           </div>
