@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 
-import may from "../../asset/maya.png";
+import may from "../../asset/hire.jpg";
 import pro from "../../asset/pro.png";
 import cemera from "../../asset/cemra.jpg";
 import code from "../../asset/source-code.png";
@@ -115,7 +115,7 @@ const Hero = () => {
         {/* Camera Card */}
         <motion.div
           className="absolute top-60 right-38 w-44 h-44 bg-gradient-to-br rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden p-1"
-          animate={{ y: [0, -15, 0] }}
+          animate={{ y: [0, -14, 0] }}
           transition={floatTransition}
         >
           <Image
@@ -155,7 +155,7 @@ const Hero = () => {
         {/* Person Card */}
         <motion.div
           className="absolute top-[36rem] right-24 w-48 rounded-2xl shadow-2xl overflow-hidden"
-          animate={{ y: [0, -10, 0] }}
+          animate={{ y: [0, -16, 0] }}
           transition={{
             duration: 5,
             repeat: Infinity,

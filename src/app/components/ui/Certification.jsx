@@ -6,6 +6,11 @@ import AWS1 from "../../asset/ama1.png";
 import googlehack from "../../asset/Hack2skill-Certificate.png";
 
 const blogPosts = [
+    {
+    date: "August, 2025",
+    title: "Google solution Challange.",
+    image: googlehack,
+  },
   {
     date: "July 2, 2025",
     title: "JPMorgan Chase & Co. Quantitative Research Simulation - Developed practical finance & data skills.",
@@ -20,11 +25,6 @@ const blogPosts = [
     date: "February 20, 2025",
     title: "AWS Skills Centers Training - Cloud Basics: Learned cloud fundamentals and AWS services.",
     image: AWS1,
-  },
-  {
-    date: "August, 2025",
-    title: "Google solution Challange.",
-    image: googlehack,
   },
 ];
 
