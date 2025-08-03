@@ -30,7 +30,7 @@ const MayankAbout = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % cards.length);
-    }, 50); 
+    }, 100); 
     return () => clearInterval(interval);
   }, []);
 
@@ -49,9 +49,9 @@ const MayankAbout = () => {
   };
 
   return (
-    <div className="relative bg-black text-white">
-      {/* === Intro Section === */}
-      <div className="md:sticky md:top-0 flex min-h-screen md:h-screen flex-col items-center justify-center text-center p-4">
+    <div className="relative h-[400vh] bg-black text-white">
+      {/* === Sticky Intro Section === */}
+      <div className="sticky top-0 flex h-screen flex-col items-center justify-center text-center p-4">
         <div className="flex flex-col items-center justify-center gap-8 w-full z-10">
           <div className="border bg-black border-dashed border-white/[0.2] rounded-full px-4 py-2 text-sm font-medium text-white">
             Hi, I am Mayank Singh
@@ -73,7 +73,7 @@ const MayankAbout = () => {
           </div>
 
           {/* === Mobile Image Loop Box === */}
-          <div className="block md:hidden w-full mt-8 flex justify-center items-center px-4">
+          <div className="block md:hidden w-full mt-8justify-center items-center">
             <div className="w-72 h-[350px] bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden relative transition-all duration-500">
               <Image
                 src={cards[currentIndex].img}
@@ -88,25 +88,27 @@ const MayankAbout = () => {
       </div>
 
       {/* === Desktop Scroll-based Images === */}
-      <div className="relative h-[400vh] hidden md:block">
-        {cards.map((card, index) => (
-          <div
-            key={index}
-            style={getImageStyle(card.top, card.x, card.threshold)}
-            className={`absolute w-72 left-[${card.left}] transition-all duration-500 ease-in-out z-${10 * (index + 1)}`}
-          >
-            <div className="relative h-[350px] bg-black p-3 rounded-3xl shadow-xl border border-dashed border-white/[0.2] overflow-hidden">
-              <Image
-                src={card.img}
-                alt={`Image ${index + 1}`}
-                width={300}
-                height={350}
-                className="w-full h-full object-cover rounded-2xl"
-              />
-            </div>
-          </div>
-        ))}
-      </div>
+{cards.map((card, index) => (
+  <div
+    key={index}
+    style={{
+      ...getImageStyle(card.top, card.x, card.threshold),
+      left: card.left,
+    }}
+    className={`absolute w-72 transition-all duration-500 ease-in-out z-${10 * (index + 1)} hidden md:block`}
+  >
+    <div className="relative h-[350px] bg-black p-3 rounded-3xl shadow-xl border border-dashed border-white/[0.2] overflow-hidden">
+      <Image
+        src={card.img}
+        alt={`Image ${index + 1}`}
+        width={300}
+        height={350}
+        className="w-full h-full object-cover rounded-2xl"
+      />
+    </div>
+  </div>
+))}
+
     </div>
   );
 };
