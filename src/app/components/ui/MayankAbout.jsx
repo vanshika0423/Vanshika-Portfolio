@@ -30,7 +30,7 @@ const MayankAbout = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % cards.length);
-    }, 100);
+    }, 1000);
     return () => clearInterval(interval);
   }, []);
 
