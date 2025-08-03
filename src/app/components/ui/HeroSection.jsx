@@ -88,8 +88,8 @@ const Hero = () => {
             Frontend developer, Competitive Coder
           </p>
           <div className="text-sm text-gray-400 mt-3">
-            <span className="font-semibold text-white">2,283</span> Connection ·{" "}
-            <span className="font-semibold text-white">2.2K</span> Followers
+            <span className="font-semibold text-blue-400">500+</span> Connection ·{" "}
+            <span className="font-semibold text-blue-400">2.2K</span> Followers
           </div>
         </motion.div>
 
