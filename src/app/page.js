@@ -14,6 +14,7 @@ import SelectedProjects from "./components/ui/SelectedProjects";
 
 import Certification from "./components/ui/Certification";
 import HeroSection from "./components/ui/HeroSection";
+import MayankAbout from "./components/ui/MayankAbout";
 
 export default function Home() {
   const homeRef = useRef(null);
@@ -31,6 +32,7 @@ export default function Home() {
         {/* <BackgroundBeamsWithCollisionDemo /> */}
         <HeroSection/>
       </div>
+      <MayankAbout/>
       <div ref={projectRef}>
         <TimelineDemo />
       </div>

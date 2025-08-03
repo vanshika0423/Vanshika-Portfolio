@@ -105,7 +105,7 @@ const Hero = () => {
           }}
         >
           <span className="bg-purple-600 px-4 py-2 text-sm rounded-full shadow-lg">
-            Build beautiful from scratch
+            Available for new projects
           </span>
           <span className="bg-zinc-800 text-gray-400 px-3 py-1 text-xs rounded-md">
             Code
