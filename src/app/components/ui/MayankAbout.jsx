@@ -49,7 +49,7 @@ const MayankAbout = () => {
   };
 
   return (
-    <div className="relative h-[400vh] bg-black text-white">
+<div className="relative h-screen mb-10 md:mb-0 md:h-[400vh] bg-black text-white">
       {/* === Sticky Intro Section === */}
       <div className="sticky top-0 flex h-screen flex-col items-center justify-center text-center p-4">
         <div className="flex flex-col items-center justify-center gap-8 w-full z-10">
@@ -73,7 +73,7 @@ const MayankAbout = () => {
           </div>
 
           {/* === Mobile Image Loop Box === */}
-          <div className="block md:hidden w-full mt-8justify-center items-center">
+     <div className="block md:hidden w-full mt-8 flex justify-center items-center">
             <div className="w-72 h-[350px] bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden relative transition-all duration-500">
               <Image
                 src={cards[currentIndex].img}
