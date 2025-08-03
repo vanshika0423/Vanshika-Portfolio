@@ -30,7 +30,7 @@ const MayankAbout = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % cards.length);
-    }, 1000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
@@ -74,7 +74,7 @@ const MayankAbout = () => {
 
           {/* === Mobile Image Loop Box === */}
           <div className="block md:hidden w-full mt-8 flex justify-center items-center">
-            <div className="w-72 h-[350px] bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden relative transition-all duration-500">
+            <div className="w-72 h-[350px] bg-black rounded-3xl shadow-xl  border border-dashed border-white/[0.2]  overflow-hidden relative transition-all duration-500">
               <Image
                 src={cards[currentIndex].img}
                 alt={`Mobile Image ${currentIndex + 1}`}
