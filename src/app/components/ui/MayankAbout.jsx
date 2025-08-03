@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import About1 from "../../asset/hire.jpg";
 import About2 from "../../asset/aboutimage1.jpg";
@@ -53,23 +54,48 @@ const MayankAbout = () => {
       {/* === Sticky Intro Section === */}
       <div className="sticky top-0 flex h-screen flex-col items-center justify-center text-center p-4">
         <div className="flex flex-col items-center justify-center gap-8 w-full z-10">
-          <div className="border bg-black border-dashed border-white/[0.2] rounded-full px-4 py-2 text-sm font-medium text-white">
+          <motion.div
+            initial={{ opacity: 0, y: 40, filter: "blur(5px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0 }}
+            className="border bg-black border-dashed border-white/[0.2] rounded-full px-4 py-2 text-sm font-medium text-white"
+          >
             Hi, I am Mayank Singh
-          </div>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-medium max-w-4xl leading-tight md:leading-snug">
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 40, filter: "blur(5px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.05 }}
+            className="text-2xl md:text-4xl lg:text-5xl font-medium max-w-4xl leading-tight md:leading-snug"
+          >
             A frontend developer passionate about crafting engaging websites
             that are clean, fast, and user-focused.
-          </h1>
+          </motion.h1>
+
           <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
-            <div className="border bg-black border-dashed border-white/[0.2] rounded-full px-4 py-2 text-sm font-medium text-gray-400">
-              Built 10+ Personal Projects
-            </div>
-            <div className="border bg-black border-dashed border-white/[0.2] rounded-full px-4 py-2 text-sm font-medium text-gray-400">
-              3+ Months of Hands-on Experience
-            </div>
-            <div className="border bg-black border-dashed border-white/[0.2] rounded-full px-4 py-2 text-sm font-medium text-gray-400">
-              Trusted by Peers & Mentors
-            </div>
+            {[
+              "Built 10+ Personal Projects",
+              "3+ Months of Hands-on Experience",
+              "Trusted by Peers & Mentors",
+            ].map((text, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 40, filter: "blur(5px)" }}
+                whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                  delay: 0.1 + i * 0.1,
+                }}
+                className="border bg-black border-dashed border-white/[0.2] rounded-full px-4 py-2 text-sm font-medium text-gray-400"
+              >
+                {text}
+              </motion.div>
+            ))}
           </div>
 
           {/* === Mobile Image Loop Box === */}
