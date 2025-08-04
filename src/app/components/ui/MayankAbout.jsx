@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
-import About1 from "../../asset/hire.jpg";
+import About1 from "../../asset/about4.jpg";
 import About2 from "../../asset/aboutimage1.jpg";
 import About3 from "../../asset/about2.png";
 import About4 from "../../asset/about23.jpg";
