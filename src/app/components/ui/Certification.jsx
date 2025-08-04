@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { motion } from "framer-motion"; // Import motion
+import { motion } from "framer-motion"; 
 
 import quant from "../../asset/jp.png";
 import AWS from "../../asset/ama.png";
