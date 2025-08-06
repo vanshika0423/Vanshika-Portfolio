@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-
 import may from "../../asset/hire.jpg";
 import pro from "../../asset/pro.png";
 import cemera from "../../asset/cemra.jpg";
@@ -19,18 +18,33 @@ const floatTransition = {
 
 const Hero = () => {
   return (
-    <section className="bg-black text-white min-h-screen flex items-center px-6 md:px-20 py-10 relative overflow-hidden">
-      <div className="max-w-xl z-10 mt-30">
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+    <section
+      className="
+        bg-black text-white min-h-screen 
+        px-6 md:px-20 py-10 relative overflow-hidden
+        flex md:block               /* flex only on mobile */
+        items-center justify-center /* center only on mobile */
+      "
+    >
+      {/* Main text block */}
+      <div
+        className="
+          max-w-xl z-10 
+          text-center md:text-left   /* center text on mobile, left on big screens */
+          mt-00 md:mt-65
+        "
+      >
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
           <span className="text-purple-400">Mayank Singh,</span>
           <br />A Competitive Coder & Frontend Developer.
         </h1>
-        <p className="text-gray-400 mt-6 text-lg">
+        <p className="text-gray-400 mt-6 text-base sm:text-lg">
           Deep diving into competitive programming and learning the art of
           optimization.
         </p>
       </div>
 
+      {/* Floating visuals (unchanged, only show on lg+) */}
       <motion.div
         animate={{ y: [0, -10, 0] }}
         transition={{
@@ -132,7 +146,6 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Heart Button Floating */}
         {/* Code Icon Floating */}
         <motion.div
           className="absolute top-120 right-24"
