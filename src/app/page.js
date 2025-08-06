@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <div className="relative">
-      {/* <LoadingScreen /> */}
+      <LoadingScreen />
 
       <FloatingNavDemo refs={{ homeRef, projectRef, codingRef, contactRef }} />
       <SplashCursor />
