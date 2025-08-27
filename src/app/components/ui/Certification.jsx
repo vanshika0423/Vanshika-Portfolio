@@ -5,16 +5,19 @@ import { motion } from "framer-motion";
 import quant from "../../asset/jp.png";
 import AWS from "../../asset/ama.png";
 import AWS1 from "../../asset/ama1.png";
+import google1 from "../../asset/prompt.png";
+import google2 from "../../asset/cyber.png";
+import myntra from "../../asset/myntra.png"
 import googlehack from "../../asset/Hack2skill-Certificate.png";
 import hwi from "../../asset/hwi.png";
 import salseforce from "../../asset/Rissa May, Scarlett Alexis.png";
 
 const blogPosts = [
-  {
-    date: "August, 2025",
-    title: "Google solution Challange.",
-    image: googlehack,
-  },
+  // {
+  //   date: "August, 2025",
+  //   title: "Google solution Challange.",
+  //   image: googlehack,
+  // },
   {
     date: "July, 2025",
     title: "Hack with Infy.",
@@ -26,23 +29,42 @@ const blogPosts = [
     image: salseforce,
   },
   {
-    date: "July 2, 2025",
+    date: "June 12, 2025",
     title:
-      "JPMorgan Chase & Co. Quantitative Research Simulation - Developed practical finance & data skills.",
-    image: quant,
+      "Google Prompting Essentials",
+    image: google1,
+  },
+  // {
+  //   date: "July 2, 2025",
+  //   title:
+  //     "JPMorgan Chase & Co. Quantitative Research Simulation - Developed practical finance & data skills.",
+  //   image: quant,
+  // },
+  {
+    date: "April 23, 2025",
+    title:
+      "AWS Security Fundamental Second Edition",
+    image: AWS1,
   },
   {
-    date: "March 17, 2025",
+    date: "March 11, 2025",
     title:
       "AWS Cloud Practitioner Essentials - Gained core knowledge of AWS Cloud architecture and tools.",
     image: AWS,
   },
+  // {
+  //   date: "october, 2024",
+  //   title:
+  //     "Foundations of Cybersecurity",
+  //   image: myntra,
+  // },
   {
-    date: "February 20, 2025",
+    date: "december 23, 2023",
     title:
-      "AWS Skills Centers Training - Cloud Basics: Learned cloud fundamentals and AWS services.",
-    image: AWS1,
+      "Foundations of Cybersecurity",
+    image: google2,
   },
+  
 ];
 
 const Certification = () => {

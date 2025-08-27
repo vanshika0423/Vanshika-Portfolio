@@ -82,11 +82,11 @@ const Hero = () => {
           <div className="flex items-center gap-4">
             <Image
               src={pro}
-              alt="Mayank Singh"
+              alt="Vanshika Dixit"
               className="w-12 h-12 rounded-full object-cover"
             />
             <div className="flex-1">
-              <p className="font-semibold">Mayank Singh</p>
+              <p className="font-semibold">Vanshika Dixit</p>
               <p className="text-sm text-gray-400">@linkedin</p>
             </div>
             <a

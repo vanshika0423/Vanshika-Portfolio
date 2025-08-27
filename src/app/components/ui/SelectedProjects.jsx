@@ -5,23 +5,24 @@ import { motion } from "framer-motion";
 import leet from "../../asset/leetcode.png";
 import codeforce from "../../asset/codeforce.png";
 import github from "../../asset/github.png";
+import linkedln from "../../asset/linkedIn.png"
 
 export default function SelectedProjects() {
   const projects = [
     {
       title: "Leetcode",
       image: leet,
-      link: "https://leetcode.com/u/mayank__24/",
-    },
-    {
-      title: "Codeforce",
-      image: codeforce,
-      link: "https://codeforces.com/profile/minku6296",
+      link: "https://leetcode.com/u/_vanshika_04/",
     },
     {
       title: "GitHub",
       image: github,
-      link: "https://github.com/MayankGEHU",
+      link: "https://github.com/vanshika0423",
+    },
+    {
+      title: "LinkedIn",
+      image: linkedln,
+      link: "https://www.linkedin.com/in/vanshika-dixit-041543272/",
     },
   ];
 

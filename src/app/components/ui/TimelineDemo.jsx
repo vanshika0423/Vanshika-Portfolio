@@ -1,39 +1,39 @@
 import React from "react";
 import { Timeline } from "./Timeline";
 import Image from "next/image";
-import freg from "../../asset/memory_freg.png";
-import fre1 from "../../asset/memory_freg1.jpg";
-import freq2 from "../../asset/memory_freg3.png";
-import freq3 from "../../asset/memory_freg4.png";
-import compiler1 from "../../asset/comp1.png";
-import compiler2 from "../../asset/comp2.png";
-import compiler3 from "../../asset/comp3.jpg";
-import compiler4 from "../../asset/comp4.jpg";
-import craditcard1 from "../../asset/cradit1.png";
-import craditcard2 from "../../asset/cradit2.jpg";
-import craditcard3 from "../../asset/cardit3.jpg";
-import craditcard4 from "../../asset/cradit4.jpg";
+import freg from "../../asset/fileSystem1.png";
+import fre1 from "../../asset/fileSystem2.png";
+import freq2 from "../../asset/fileSystem4.png";
+import freq3 from "../../asset/fileSystem3.png";
+import compiler1 from "../../asset/attendance1.png";
+import compiler2 from "../../asset/attendance2.png";
+import compiler3 from "../../asset/attendance3.png";
+import compiler4 from "../../asset/attendance4.png";
+import craditcard1 from "../../asset/compiler1.png";
+import craditcard2 from "../../asset/compiler4.png";
+import craditcard3 from "../../asset/compiler3.png";
+import craditcard4 from "../../asset/compiler2.png";
 
-import mail1 from "../../asset/coldmain.png"
-import mail2 from "../../asset/coldmain1.png"
-import mail3 from "../../asset/coldmain2.png"
-import mail4 from "../../asset/coldmain3.png"
+import mail1 from "../../asset/cityMap1.png"
+import mail2 from "../../asset/cityMap4.png"
+import mail3 from "../../asset/cityMap2.png"
+import mail4 from "../../asset/cityMap3.png"
 
 export function TimelineDemo() {
   const data = [
     {
-      title: "Cold Email Genius",
+      title: "City Explorer Map",
       content: (
         <a
-          href="https://cold-email-ai-agent-frontend.vercel.app/"
+          href="https://city-explorer-map-app.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="block no-underline"
         >
           <div>
             <p className="mb-8 text-xs font-normal  md:text-sm text-neutral-200">
-              Cold Email Genius is your smart AI-powered assistant that crafts personalized, high-converting cold emails in seconds.
-              Just drop in a job description or target profile, and let the AI handle the rest — tone, structure, and persuasion optimized.
+            The City-Explorer-Map Website is a responsive web application built with React, Leaflet, and OpenStreetMap APIs to help users discover nearby restaurants, parks, museums, and attractions.
+            It features real-time distance and travel time calculations, interactive route visualization, advanced search and category filtering, and persistent favorites via local storage—offering a seamless and engaging user experience.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <Image
@@ -70,23 +70,18 @@ export function TimelineDemo() {
       ),
     },
         {
-      title: "Memory Fragmentation Visualizer",
+      title: "Virtual File System",
       content: (
         <a
-          href="https://memory-fragmentation-frontend.vercel.app/"
+          href="https://hybrid-file-system.onrender.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="block no-underline"
         >
           <div>
             <p className="mb-8 text-xs font-normal text-neutral-200 md:text-sm dark:text-neutral-200">
-              A Memory Fragmentation Visualizer is a tool designed to
-              graphically represent how memory is allocated and used within a
-              system, highlighting the presence and extent of fragmentation. It
-              provides a visual layout of memory blocks, showing allocated,
-              free, and fragmented regions, making it easier to understand how
-              inefficient memory usage can occur over time due to allocation and
-              deallocation patterns.
+              The Virtual File System project is a simulated file management platform that mimics real-world file system operations. It supports creating, reading, updating, and deleting files and folders, along with hierarchical directory structures, metadata tracking, and efficient file navigation.
+               Designed with a user-friendly interface and optimized backend logic, it demonstrates core concepts of operating systems, including file allocation, indexing, and storage management, making it ideal for learning and showcasing system-level programming skills.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <Image
@@ -123,21 +118,20 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Multi Language Compiler",
+      title: "Facial Recognition Attendance System",
       content: (
         <a
-          href="https://multi-lang-compiler-frontend.vercel.app/"
+          href="https://github.com/vanshika0423/face-attendance-system"
           target="_blank"
           rel="noopener noreferrer"
           className="block no-underline"
         >
           <div>
             <p className="mb-8 text-xs font-normal text-neutral-200 md:text-sm dark:text-neutral-200">
-              Developed a fully responsive and user-friendly frontend interface
-              for seamless code editing, compilation, and output visualization.
+              The Face Recognition Attendance System is an AI-powered application designed to automate attendance tracking using computer vision and machine learning. Built with technologies like OpenCV, Python, and deep learning models, it accurately detects and recognizes faces in real time, marking attendance without manual input.
+              The system supports secure data storage, real-time logging, and report generation, making it ideal for classrooms, offices, or events where accuracy and efficiency are critical.
             </p>
             <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-              build my own compiler for compile the code.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <Image
@@ -174,35 +168,21 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Credit Card Fraud Detection ",
+      title: "C Compiler Frontend",
       content: (
                 <a
-          href="https://github.com/MayankGEHU/Credit-Card-Fraud-Detection"
+          href="https://github.com/vanshika0423/compiler_project"
           target="_blank"
           rel="noopener noreferrer"
           className="block no-underline"
         >
         <div>
           <p className="mb-4 text-xs font-normal text-neutral-200 md:text-sm dark:text-neutral-200">
-            Developed a machine learning model to detect fraudulent credit card
-            transactions using real-world, imbalanced datasets.
+            The C Compiler Frontend project is a custom-built compiler component that performs lexical analysis, syntax parsing, and semantic validation for C programs. Using Flex and Bison, it handles tokenization, grammar parsing, and AST generation, ensuring accurate interpretation of complex C constructs like functions, loops, arrays, and conditionals.
+             The project also includes a robust symbol table to enforce type compatibility, scoping, and argument validation, providing a strong foundation for advanced compiler design and language processing tasks.
           </p>
           <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs text-neutral-300 md:text-sm dark:text-neutral-300">
-              ✅ Machine learning
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-300 md:text-sm dark:text-neutral-300">
-              ✅ Python
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-300 md:text-sm dark:text-neutral-300">
-              ✅ SMOTE
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-300 md:text-sm dark:text-neutral-300">
-              ✅ Random Forest algorithm
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-300 md:text-sm dark:text-neutral-300">
-              ✅ GridSearchCV
-            </div>
+            {/*  */}
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image

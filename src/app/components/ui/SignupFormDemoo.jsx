@@ -17,7 +17,7 @@ export function SignupFormDemo() {
 
     emailjs
       .sendForm(
-        "service_tkjqs3a",    
+        "service_ua2fj0c",    
         "template_18laqe9",    
         form.current,
         "65K9U1YH9sH3iwgaK"   

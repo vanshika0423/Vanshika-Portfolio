@@ -6,7 +6,7 @@ export function BackgroundBeamsWithCollisionDemo() {
     <BackgroundBeamsWithCollision>
       <div className="mt-25 flex flex-col items-center justify-center h-screen w-full text-center px-4">
         <h2 className="text-2xl md:text-4xl lg:text-7xl font-bold text-black dark:text-white font-sans tracking-tight z-20">
-          Hi&apos; My Name is Mayank Singh
+          Hi&apos; My Name is Vanshika Dixit
         </h2>
 
         <div className="relative mt-4 z-20">
@@ -34,6 +34,17 @@ export function BackgroundBeamsWithCollisionDemo() {
 //   return (
 //     <div className="w-full h-screen">
 //       <Spline scene="/spline/sceneheor.splinecode" />
+//     </div>
+//   );
+// }
+//"use client"; // (only needed for Next.js app directory, if using client components)
+// import React from "react";
+// import Spline from '@splinetool/react-spline';
+
+// export function BackgroundBeamsWithCollisionDemo() {
+//   return (
+//     <div style={{ width: '100%', height: '500px' }}>
+//       <Spline scene="https://prod.spline.design/MThNWdOAUhBErfmc/scene.splinecode" />
 //     </div>
 //   );
 // }
