@@ -6,7 +6,6 @@ This is my personal portfolio website built using **Next.js** and **Tailwind CSS
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Deployment**: [Mayank Singh](https://mayank-portfolio-taupe.vercel.app/)
 
 ---
 
